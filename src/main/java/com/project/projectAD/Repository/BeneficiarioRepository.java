@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BeneficiarioRepository extends JpaRepository<Beneficiario, Long> {
     Beneficiario findByNombre(String nombre);
+
 }

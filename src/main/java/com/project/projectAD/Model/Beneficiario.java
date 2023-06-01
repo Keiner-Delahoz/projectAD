@@ -14,7 +14,7 @@ import java.util.List;
 @DiscriminatorValue("beneficiario")
 public class Beneficiario extends Persona{
 
-//    @OneToMany(mappedBy = "beneficiario", cascade = CascadeType.ALL, orphanRemoval = true)
-//    private List<SolicitudBeneficio> solicitudesBeneficio = new ArrayList<>();
+    @OneToMany(mappedBy = "beneficiario", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<SolicitudBeneficio> solicitudesBeneficio = new ArrayList<>();
 
 }
