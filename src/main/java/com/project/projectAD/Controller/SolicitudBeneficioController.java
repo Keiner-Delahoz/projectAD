@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/solicitud/beneficios")
+@CrossOrigin
 public class SolicitudBeneficioController {
 
     @Autowired
