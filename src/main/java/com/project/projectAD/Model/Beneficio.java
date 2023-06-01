@@ -10,7 +10,7 @@ public class Beneficio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idDonacion;
+    private Long idBeneficio;
 
     private String asunto;
 

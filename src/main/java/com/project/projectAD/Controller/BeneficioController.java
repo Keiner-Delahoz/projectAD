@@ -1,7 +1,7 @@
 package com.project.projectAD.Controller;
 
 import com.project.projectAD.DTO.BeneficioDTO;
-import com.project.projectAD.Service.DonacionService;
+import com.project.projectAD.Service.BeneficioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class BeneficioController {
 
     @Autowired
-    private DonacionService donacionService;
+    private BeneficioService beneficioService;
 
     @PostMapping()
     public ResponseEntity<String> save(@RequestBody BeneficioDTO beneficioDTO) {
 //        try {
-            donacionService.create(beneficioDTO);
+            beneficioService.create(beneficioDTO);
 //            return ResponseEntity.status(HttpStatus.CREATED).build();
             return ResponseEntity.ok("Usuario y persona creados exitosamente");
 //        } catch (Exception e) {

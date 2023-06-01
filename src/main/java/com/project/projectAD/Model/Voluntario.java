@@ -16,6 +16,6 @@ public class Voluntario extends Persona {
 
     @OneToMany(mappedBy = "voluntario", cascade = CascadeType.ALL)
     @JsonIgnore
-    private List<Beneficio> donaciones;
+    private List<Beneficio> beneficios;
 
 }

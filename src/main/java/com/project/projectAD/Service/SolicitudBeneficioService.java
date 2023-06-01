@@ -21,17 +21,18 @@ public class SolicitudBeneficioService {
     private PersonaRepository personaRepository;
 
 
-//    public void create(Long identificacion, SolicitudBeneficioDTO solicitudBeneficioDTO) {
-////        if (personaRepository.existsById(usuarioDTO.getIdentificacion()) || usuarioRepository.existsByEmail(usuarioDTO.getEmail())){
-////            throw new Exception("El usuario ya existe");
-////        } else {
-//            personaRepository.findBy(identificacion);
+    public void create(Long identificacion, SolicitudBeneficioDTO solicitudBeneficioDTO) {
+//        if (personaRepository.existsById(usuarioDTO.getIdentificacion()) || usuarioRepository.existsByEmail(usuarioDTO.getEmail())){
+//            throw new Exception("El usuario ya existe");
+//        } else {
+            Beneficiario beneficiario = beneficiarioRepository.getReferenceById(identificacion);
+            System.out.println(beneficiario);
 //            Persona persona = setPersonas(usuarioDTO);
 //            Usuario usuario = setUsuarios(usuarioDTO);
 //            usuario.setPersona(persona);
 //            persona.setUsuario(usuario);
 //            personaRepository.save(persona);
-////        }
-//    }
+//        }
+    }
 
 }

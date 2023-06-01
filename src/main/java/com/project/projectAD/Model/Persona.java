@@ -24,8 +24,7 @@ public class Persona {
 
     private String genero;
 
-    @OneToMany(mappedBy = "persona", cascade = CascadeType.ALL)
-
+    @OneToOne(mappedBy = "persona", cascade = CascadeType.ALL)
     private Usuario usuario;
 
 }

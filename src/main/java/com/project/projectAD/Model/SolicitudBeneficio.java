@@ -16,8 +16,8 @@ public class SolicitudBeneficio {
 
     private String descripcion;
 
-    @ManyToOne
-    @JoinColumn(name = "beneficiario_id")
-    private Beneficiario beneficiario;
+//    @ManyToOne
+//    @JoinColumn(name = "beneficiario_id")
+//    private Beneficiario beneficiario;
 
 }
